@@ -1,0 +1,14 @@
+// using mixin
+
+@mixin marginLR($property) {
+    margin-left: $property;
+    margin-right: $property;
+}
+
+body {
+    @include marginLR(10px)
+}
+
+div {
+    @include marginLR(15px)
+}
